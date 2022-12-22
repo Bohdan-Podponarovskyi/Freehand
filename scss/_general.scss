@@ -4,11 +4,15 @@ $color_secondary: #3DB370;
 
 html {
   font-size: 62.5%;
+  height: 100vh;
+  min-height: 100%;
 }
 
 body {
+  min-height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;

@@ -1,10 +1,14 @@
 html {
   font-size: 62.5%;
+  height: 100vh;
+  min-height: 100%;
 }
 
 body {
+  min-height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -31,6 +35,7 @@ a {
 
 .main {
   border-top: 1px solid #EFEEF3;
+  flex: 1;
 }
 .main__content {
   margin: 100px auto;
@@ -66,9 +71,10 @@ a {
 }
 .main__details-link {
   font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
   color: #3DB370;
+  width: fit-content;
 }
 .main__services-list {
   display: grid;
@@ -91,7 +97,7 @@ a {
   border-radius: 16px;
   position: relative;
 }
-.main__services-icon {
+.main__services-icon_blue, .main__services-icon_green {
   max-width: 36px;
   max-height: 36px;
   position: absolute;
@@ -100,6 +106,15 @@ a {
   left: 0;
   bottom: 0;
   right: 0;
+}
+.main__services-icon_green {
+  display: none;
+}
+.main__services-card:hover {
+  border: 1px solid #3DB370;
+}
+.main__services-card:hover .main__services-icon_green {
+  display: block;
 }
 
 .footer {

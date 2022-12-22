@@ -1,0 +1,33 @@
+$color_primary: #16133D;
+$color_secondary: #3DB370;
+
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: $color_primary;
+}
+
+a {
+  text-decoration: none;
+}
+
+.content-wrapper {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+@import "./layout/header";
+@import "./layout/main";
+@import "./layout/footer";
+
+@import "./elements/logo";
+@import "./elements/social-networks";

@@ -1,0 +1,25 @@
+.logo {
+
+  &__link {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 15px;
+    justify-content: flex-start;
+  }
+
+  &__company-name {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+
+    &_dark {
+      color: $color_primary;
+    }
+
+    &_white {
+      color: #FFFFFF;
+    }
+  }
+}

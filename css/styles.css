@@ -1,3 +1,164 @@
+html {
+  font-size: 62.5%;
+}
 
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #16133D;
+}
+
+a {
+  text-decoration: none;
+}
+
+.content-wrapper {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 80px;
+}
+
+.main {
+  border-top: 1px solid #EFEEF3;
+}
+.main__content {
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.main__text {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.main__text_title {
+  font-size: 1.6rem;
+  line-height: 2.1rem;
+  color: #7690A8;
+}
+.main__text_slogan {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 4rem;
+  line-height: 5.2rem;
+  letter-spacing: 0.02rem;
+}
+.main__services-name {
+  font-size: 2.4rem;
+  line-height: 2.1rem;
+  letter-spacing: 0.02rem;
+}
+.main__services-description {
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+}
+.main__details-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #3DB370;
+}
+.main__services-list {
+  display: grid;
+  grid-template: auto/repeat(3, 1fr);
+  gap: 30px;
+}
+.main__services-card {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  border: 1px solid #E5EAF4;
+  border-radius: 8px;
+}
+.main__icon-box {
+  width: 100%;
+  max-width: 64px;
+  min-height: 64px;
+  border: 1px solid rgba(21, 101, 216, 0.1);
+  border-radius: 16px;
+  position: relative;
+}
+.main__services-icon {
+  max-width: 36px;
+  max-height: 36px;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.footer {
+  min-height: 200px;
+  background: #16133D;
+}
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin: 40px auto;
+}
+
+.logo__link {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 15px;
+  justify-content: flex-start;
+}
+.logo__company-name {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  font-size: 3.5rem;
+  line-height: 3.5rem;
+}
+.logo__company-name_dark {
+  color: #16133D;
+}
+.logo__company-name_white {
+  color: #FFFFFF;
+}
+
+.social-networks__list {
+  display: flex;
+  gap: 10px;
+}
+.social-networks__list-item {
+  min-width: 40px;
+  min-height: 40px;
+  background: #fff;
+  border-radius: 4px;
+  position: relative;
+}
+.social-networks__icon {
+  width: 100%;
+  max-width: 20px;
+  height: 100%;
+  max-height: 20px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  color: #000000;
+}
+.social-networks__list-item:hover .social-networks__icon {
+  color: #3DB370;
+}
 
 /*# sourceMappingURL=styles.css.map */
